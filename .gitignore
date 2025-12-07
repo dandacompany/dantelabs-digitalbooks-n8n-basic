@@ -5,3 +5,14 @@ CLAUDE.md
 references/
 .history
 dantelabs-digitalbooks-n8n-basic.code-workspace
+ch01/
+ch02/
+!ch03/datasets/
+ch04/
+ch05/
+ch03/\[3.1.1]_직원_온보딩_체크리스트_자동생성.json
+ch03/\[3.1.2]_API_기본활용법.json
+ch03/\[3.1.3]_WF1_DataTable_고객문의관리.json
+ch03/\[3.1.3]_WF2_Airtable_주문현황관리.json
+ch03/\[3.1.3]_WF3_Notion_고객VIP관리.json
+ch03/DigitalBooks_CH03_EX2_API기본활용법.json

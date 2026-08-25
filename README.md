@@ -3,6 +3,13 @@
 《**처음이지만 프로처럼 쓰는 n8n**》(디지털북스, 단테 곽지호 지음)의 실습용 데이터 저장소입니다.
 책 본문에서 URL로 불러오는 데이터셋을 이곳에서 제공합니다.
 
+
+> ℹ️ **자료 정본은 단테랩스 홈페이지입니다.**
+> 이 책의 실습 워크플로·데이터·부록 가이드는 모두 **[단테랩스 자료실](https://dante-labs.com/library/n8n-basic)** 에서 제공됩니다.
+> 이 저장소는 **책 167쪽에 인쇄된 URL을 계속 살려두기 위한 데이터셋 미러**입니다.
+> 데이터 내용은 홈페이지 정본과 동일합니다(2026-08-25 대조 확인).
+> 새 자료·워크플로는 홈페이지에서 받아주세요.
+
 ---
 
 ## 저장소 구조
@@ -76,7 +83,7 @@ n8n은 **하나의 워크플로에 [Manual Trigger] 노드를 1개만 허용**�
 
 ## 관련 링크
 
-- 도서 안내: <https://dante-labs.com/library/n8n-basic>
+- **자료 정본(워크플로·부록 전체)**: <https://dante-labs.com/library/n8n-basic>
 - 전자책: <https://books.dante-labs.com/digitalbooks/n8n-basic>
 - 단테랩스 홈페이지: <https://dante-labs.com>
 - 유튜브 @dante-labs: <https://youtube.com/@dante-labs>

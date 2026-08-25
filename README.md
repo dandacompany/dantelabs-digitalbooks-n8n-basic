@@ -1,151 +1,94 @@
-# n8n 기본서 자료실
+# 처음이지만 프로처럼 쓰는 n8n — 실습 자료실
 
-## 자동화 워크플로우 n8n 마스터하고 칼퇴하자
-
-이 저장소는 n8n 기본서 집필 프로젝트의 자료실입니다. 책에서 다루는 실습 예제, 워크플로우, 그리고 참고 자료를 제공합니다.
-
----
-
-## 📖 책 소개
-
-**제목**: 자동화 워크플로우 n8n 마스터하고 칼퇴하자
-
-이 책은 **완전 초보자도 n8n 마스터가 될 수 있도록** 설계되었습니다. 프로그래밍 경험이 없어도, 자동화 도구를 한 번도 써본 적이 없어도 괜찮습니다. n8n을 처음 마주하는 분도 기초소양과 단계별로 차근차근 따라오시면, 여러분만의 지능형 자동화 워크플로를 만들 수 있게 될 것입니다.
-
-### 이 책의 특징
-
-- **실습 중심의 학습**: 각 장마다 실제로 작동하는 워크플로를 직접 만들어보며 학습합니다
-- **ROI 중심의 실전 사례**: 구체적인 숫자와 성과를 보여드립니다 (월 200시간 절약, 2주 작업을 2시간으로 단축 등)
-- **초보자 친화적 설명**: 전문 용어는 최소화하고, 일상 언어로 설명합니다
-- **2025년 최신 트렌드 반영**: AI 에이전트, RAG 시스템, MCP 등 현재 가장 주목받는 기술들을 다룹니다
+《**처음이지만 프로처럼 쓰는 n8n**》(디지털북스, 단테 곽지호 지음)의 실습용 데이터 저장소입니다.
+책 본문에서 URL로 불러오는 데이터셋을 이곳에서 제공합니다.
 
 ---
 
-## 📁 저장소 구조
+## 저장소 구조
 
 ```text
-dantelabs-digitalbooks-n8n-basic/
-├── ch01/              # 1장 실습 자료
-├── ch02/              # 2장 실습 자료
-├── ch03/              # 3장 실습 자료
-├── ch04/              # 4장 실습 자료
-└── ch05/              # 5장 실습 자료
+ch03/
+└── datasets/
+    ├── users_10.json        # 가상 고객 10건 (VIP 고객 관리 실습)
+    ├── orders_100.json      # 가상 주문 100건
+    ├── posts_100.json       # 가상 게시글 100건
+    └── comments_500.json    # 가상 댓글 500건
 ```
 
----
-
-## 🎯 주요 내용
-
-### 파트별 구성
-
-#### Part 1: n8n이란 무엇인가? (기초 입문)
-
-- **Chapter 1.1**: n8n 워크플로 알아보기
-- **Chapter 1.2**: n8n 설치하기
-
-**학습 목표**: n8n이 무엇인지 이해하고, 실제로 설치하여 첫 화면을 열어보는 것까지 완료합니다.
-
-#### Part 2: n8n 구조 이해 및 노드 완벽 이해하기 (핵심 개념)
-
-- **Chapter 2.1**: JSON과 데이터 처리
-- **Chapter 2.2**: 트리거와 노드 이해
-- **Chapter 2.3**: Expression과 변수 활용
-
-**학습 목표**: n8n의 작동 원리를 깊이 이해하고, 노드를 자유자재로 다룰 수 있는 능력을 갖춥니다.
-
-#### Part 3: n8n 워크플로 기본편 (실전 시작)
-
-- **Chapter 3.1**: 첫 번째 워크플로 만들기
-- **Chapter 3.2**: 실무 워크플로 구축
-- **Chapter 3.3**: 에러 처리와 디버깅
-
-**학습 목표**: 기본적인 자동화 워크플로를 독립적으로 설계하고 구현할 수 있는 능력을 갖춥니다.
-
-#### Part 4: n8n 워크플로 중급편 - AI 에이전트 워크플로 (지능형 자동화)
-
-- **Chapter 4.1**: 단일 AI 에이전트 워크플로
-- **Chapter 4.2**: 멀티 에이전트 시스템 구축
-- **Chapter 4.3**: RAG 기반 지식베이스 에이전트
-
-**학습 목표**: AI를 활용한 지능형 자동화 시스템을 설계하고 구현할 수 있는 고급 역량을 갖춥니다.
-
-#### Part 5: 알아두면 좋은 n8n 지식 모음 (실무 최적화)
-
-- **Chapter 5.1**: 성능 최적화
-- **Chapter 5.2**: 보안과 권한 관리
-- **Chapter 5.3**: 협업과 버전 관리
-- **Chapter 5.4**: 트러블슈팅
-
-**학습 목표**: n8n을 프로덕션 환경에서 안정적으로 운영하고, 팀 차원에서 효율적으로 관리할 수 있는 능력을 갖춥니다.
+모두 실습용으로 생성한 **가상 데이터**입니다. 실존 인물·거래와 무관합니다.
 
 ---
 
-## 🚀 시작하기
+## 사용법
 
-### 워크플로우 가져오기
+책의 [HTTP Request] 노드에 아래 주소를 그대로 넣으면 됩니다. Method는 `GET`입니다.
 
-실습 과정에서 필요한 예제 워크플로 파일은 이 저장소에서 다운받을 수 있습니다. 저자가 작성한 여러 워크플로들을 살펴보며, 여러분의 실습에 참고해보세요.
+| 데이터셋 | URL |
+|---|---|
+| `users_10.json` | `https://raw.githubusercontent.com/dandacompany/dantelabs-digitalbooks-n8n-basic/refs/heads/main/ch03/datasets/users_10.json` |
+| `orders_100.json` | `https://raw.githubusercontent.com/dandacompany/dantelabs-digitalbooks-n8n-basic/refs/heads/main/ch03/datasets/orders_100.json` |
+| `posts_100.json` | `https://raw.githubusercontent.com/dandacompany/dantelabs-digitalbooks-n8n-basic/refs/heads/main/ch03/datasets/posts_100.json` |
+| `comments_500.json` | `https://raw.githubusercontent.com/dandacompany/dantelabs-digitalbooks-n8n-basic/refs/heads/main/ch03/datasets/comments_500.json` |
 
-#### 1단계: 새 워크플로 열기
+### users_10.json 구조
 
-n8n 사이드바에서 **Workflows** 메뉴를 클릭합니다.  
-우측 상단의 **[+ New]** 버튼을 클릭하여 새로운 워크플로 에디터(캔버스)를 엽니다.
+```json
+{
+  "customer_id": "VIP-0001",
+  "customer_name": "김철수",
+  "email": "kim123@gmail.com",
+  "phone": "010-1234-5678",
+  "membership_grade": "실버",
+  "total_purchase": 580000,
+  "last_purchase_date": "2023-03-26",
+  "address": "서울특별시 강남구 테헤란로 123",
+  "notes": "신규 VIP 고객 등록"
+}
+```
 
-#### 2단계: 파일 Import 메뉴 사용
-
-워크플로 캔버스 상단 메뉴에서 우상단에 있는 **[...] More** 버튼을 클릭합니다.  
-드롭다운 메뉴에서 **[Import from File]** 을 선택합니다.  
-파일 탐색기 창이 열리면, 가져오려는 워크플로의 JSON 파일을 선택하고 **[열기]**를 클릭합니다.
-
-#### 3단계: 워크플로 확인
-
-선택한 JSON 파일의 내용이 현재 캔버스에 로드되며, 즉시 편집하고 실행할 수 있습니다.  
-워크플로우가 로드되면 필요한 설정(API 키, 인증 정보 등)을 확인하고 수정합니다.
-
----
-
-## 📖 관련 자료
-
-### 저자 채널 및 커뮤니티
-
-- 🏠 [단테랩스 홈페이지](https://dante-datalab.com) - 공식 홈페이지
-- 📺 [저자 유튜브](https://youtube.com/@dante-labs) - n8n과 자동화 프레임워크에 대한 다양한 영상
-- 💬 [저자 오픈카톡](https://open.kakao.com/o/gURfTmqh) - 질문과 소통 커뮤니티
-- 🎮 [저자 디스코드 서버](https://discord.gg/hMfgybcTJQ) - 실시간 토론 및 협업
-
-### n8n 공식 자료
-
-- 🌐 [n8n 공식 문서](https://docs.n8n.io/)
-- 💬 [n8n 공식 커뮤니티](https://community.n8n.io/)
-
-> 💡 **팁**: 혼자서 공부하면 시간이 오래 걸립니다. 다른 사람들은 어떤 자동화 워크플로를 만들고 있는지 참고하면서 함께 공유하며 성장하는 것도 중요합니다.
+10건이 `customers` 배열에 담겨 있습니다. 책에서는 [Split Out] 노드의 `Field To Split Out`에 `customers`를 지정해 개별 아이템으로 분리합니다.
 
 ---
 
-## ⚠️ 주의사항
+## 정오표
 
-- 이 저장소의 워크플로우는 **교육 목적**으로 제작되었습니다
-- 실무에 적용하기 전에 보안 및 성능 측면의 추가 검토가 필요합니다
-- API 키나 인증 정보는 워크플로우에 포함되어 있지 않습니다. 사용 전에 직접 설정해야 합니다
-- 일부 워크플로우는 외부 서비스 API를 사용하므로, 해당 서비스의 계정 및 API 키가 필요할 수 있습니다
+### 166쪽 · Notion VIP 고객 관리 워크플로 구성도
 
----
+166쪽 구성도는 **고객 생성 / 고객 조회 / 고객 수정** 세 단계를 한 화면에 모아 보여주고 있으나,
+n8n은 **하나의 워크플로에 [Manual Trigger] 노드를 1개만 허용**합니다. 두 번째 수동 트리거를
+추가하려고 하면 다음 오류가 표시됩니다.
 
-## 📝 라이선스
+> Could not insert node — Only one 'Manual Trigger' node is allowed in a workflow
 
-이 저장소의 자료는 교육 목적으로 제공됩니다. 상업적 이용 시 저작권자의 허가가 필요할 수 있습니다.
+따라서 Step 1·2·3은 **각각 별도의 워크플로로 나누어** 만들어 주세요. 워크플로마다 수동 트리거가
+하나씩 있는 형태가 되며, 실습 내용과 결과는 책과 동일합니다.
 
----
+| 워크플로 | 트리거 이름 | 내용 |
+|---|---|---|
+| 1 | 고객 생성 | Step 1 — VIP 고객 데이터 생성 및 저장 (Create) |
+| 2 | 고객 조회 | Step 2 — VIP 고객 조회 (Get) 및 필터링 |
+| 3 | 고객 수정 | Step 3 — 고객 정보 수정 (Update) |
 
-## 📧 문의 및 피드백
-
-책과 관련된 문의사항이나 피드백은 다음 방법으로 남겨주세요:
-
-- 📝 [GitHub Issues](https://github.com/dandacompany/dantelabs-digitalbooks-n8n-basic/issues) - 버그 리포트 및 기능 제안
-- 💬 [오픈카톡](https://open.kakao.com/o/gURfTmqh) - 빠른 질문 및 소통
-- 🎮 [디스코드](https://discord.gg/hMfgybcTJQ) - 실시간 토론
+166쪽 구성도는 세 단계의 전체 흐름을 한눈에 보여주기 위한 개념도로 참고해 주세요.
 
 ---
 
-**집필 진행 중** 📝  
-마지막 업데이트: 2025년 1월
+## 관련 링크
+
+- 도서 안내: <https://dante-labs.com/library/n8n-basic>
+- 전자책: <https://books.dante-labs.com/digitalbooks/n8n-basic>
+- 단테랩스 홈페이지: <https://dante-labs.com>
+- 유튜브 @dante-labs: <https://youtube.com/@dante-labs>
+- 오픈채팅 Agentic AI 커뮤니티: <https://open.kakao.com/o/gURfTmqh>
+- 디스코드: <https://discord.com/invite/rXyy5e9ujs>
+- n8n 공식 문서: <https://docs.n8n.io/>
+
+## 문의
+
+- 오탈자·오류 제보: [GitHub Issues](https://github.com/dandacompany/dantelabs-digitalbooks-n8n-basic/issues)
+- 질문: 오픈채팅 또는 디스코드
+
+---
+
+이 저장소의 자료는 **교육 목적**으로 제공됩니다.
